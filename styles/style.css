@@ -1,0 +1,472 @@
+@import url(../styles/cabecalho.css);
+@import url(../styles/carrossel.css);
+@import url(../styles/rodape.css);
+@import url(../styles/principal.css);
+@import url(../styles/quemSomos.css);
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --vermelho: rgb(219, 46, 46);
+    --azul-claro: #132050;
+    --azul-escuro: #101528;
+    --branco: whitesmoke;
+    --fonte-principal: "Poppins", sans-serif;
+    --fonte-nunito: "Nunito Sans", sans-serif;
+    --amarelo: rgb(255, 208, 0);
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    
+}
+
+
+main {
+    text-align: center;
+    
+    color: var(--branco);
+    background-color: var(--azul-claro);
+}
+
+.conteiner-padding {
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabecalho1024px {
+    display: none;
+}
+
+
+.abertura-titulo1024px {
+    display: none;
+}
+
+/* nossa loja */ 
+
+.nossa-loja {
+    margin: 4em 1em 2em 1em;
+    
+}
+
+.funcionamento1024px {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .fachada-dtadeu {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+
+    .conteiner-2carroseis {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .conteiner-carrosseis {
+        display: grid;
+        padding: 0 4em;
+     }
+     
+    p {
+        font-size: 1.5em;
+    }
+
+    /* .conteiner-carrosseis {
+       display: flex;
+       justify-content: space-around;
+    } */
+
+    .conteiner-div-carrossel {
+        flex-grow: 1;
+    }
+
+    .botao-carrosseis {
+        width: 100%;
+    }
+
+    .link-botao-contato {
+        font-size: 1.5em;
+      }
+    
+      
+    
+    .icone
+  
+
+    /* ### */
+
+    .botao-contato-abertura {
+        margin: 3em 0;
+        width: 38%;
+      }
+
+    .imagem-redes {
+        width: 2.5em;
+    }
+
+    .main-conteiner {
+        margin: 0 1em;
+        min-width: 200px;
+    }
+   
+
+    .subtitulo-rodape {
+        font-size: 1.5em;
+    }
+
+    .funcionamento1024px {
+       display: none; 
+    }
+
+    .funcionamento1024px h2 {
+        margin-top: 1em;
+    }
+    
+
+    /* banner */
+
+        .banner-titulo {
+            font-size: 9vw;
+        }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+   
+
+
+    /* header */ 
+
+    .cabecalho {
+        display: none;
+    }
+
+
+    .cabecalho1024px {
+        background-color: rgb(255, 255, 255);
+        padding: 2em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    
+
+    .links-cabecalho1024px {
+        text-align: center;
+        display: flex;
+        gap: 5em;
+    }
+    
+    .link-cabecalho1024px {
+        font-size: 1.8vw;
+        font-weight: 600;
+        color: black;
+    }
+    
+    .link-cabecalho1024px:hover {
+        border-bottom: solid 3px var(--azul-claro);
+    }
+
+    .logo-dtadeu1024px {
+        width: 15vw;
+    }
+
+    .wrapper span {
+        font-size: 1.1em;
+    }
+
+    /* cabecalho 1024px */
+
+b
+
+
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .botao-cabecalho1024{
+    display: block;
+    padding: 0.4em 1.2em;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    
+    
+  }
+  
+  .botao-cabecalho1024 span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .botao-cabecalho1024:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--azul-claro);
+    transition: all .35s;
+    
+  }
+
+  
+  .botao-cabecalho1024:hover{
+    color: #fff;
+  }
+  
+  .botao-cabecalho1024:hover:after{
+    width: 100%;
+  }
+
+  /* banner */
+
+  .banner-titulo {
+    margin-left: 0.5em;
+    font-size: 6.5vw;
+  }
+
+  .banner-subtitulo {
+    font-size: 2vw;
+  }
+
+  /* abertura */
+
+
+  .abertura-titulo {
+    display: none;
+  }
+
+  .abertura-titulo1024px {
+    font-size: 40px;
+    margin: 1em 0;
+    display: block;
+  }
+
+  .abertura-p {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 6em;
+    
+  }
+
+  .botao-contato-abertura {
+    margin: 3em 0;
+    width: 38%;
+  }
+
+  .link-botao-contato {
+    font-size: 1.5em;
+  }
+
+  .icone-zap-botao {
+    width: 2vw;
+  }
+
+
+  .contato h2 {
+    margin-top: -8px;
+  }
+    /* //// */
+
+
+    /* rodape */
+
+    .logo-dtadeu-rodape {
+        width: 20vw;
+        
+    }
+
+
+    .divisao-rodape {
+        display: flex;          /* Alinha os itens horizontalmente */
+        justify-content: space-between; /* Espaça as sections igualmente */
+        gap: 10px;              /* Espaçamento entre as sections (opcional) */
+        padding: 0 3em;
+        align-items: top;
+    }
+    
+    .divisao-rodape section {
+        flex: 1;                /* Faz com que cada section ocupe a mesma largura */
+        padding: 20px;          /* Espaçamento interno das sections */
+        
+       max-height: 100%;
+    }
+
+    .rodape p {
+        font-size: 1em;
+    }
+
+    /* rodape seção redes */
+
+    
+
+    .div-redes {
+        margin: 2em 0 0 0;
+        
+    }
+
+    .imagem-redes {
+        width: 4.5vw;
+    }
+
+     .redes-sociais {
+        margin-top: 1.5em;
+        text-align: center;
+    }
+
+    /* .subtitulo-rodape {
+        font-size: 2em;
+    } */
+
+    /* rodape seção endereços */
+
+    .divisao-endereco{
+        width: 15%;
+    }
+
+
+    /* carrossel */
+
+    .paragrafo-carrosseis {
+        font-size: 1.5em;
+        margin: 0 6em;
+    }
+
+    
+   
+    /* contato */ 
+
+    .logo-zap {
+        margin-top: 2em;
+        width: 4.5em;
+        margin-bottom: 1em;
+    }
+
+    /* func */
+
+    .funcionamento {
+        display: none;
+    }
+
+    .funcionamento1024px {
+        display: block;
+    }
+
+
+    /* quem somos */ 
+
+
+    .sobre {
+        display: flex;
+        background: rgb(16,21,40);
+        background: linear-gradient(90deg, rgba(16,21,40,0.9332983193277311) 22%, rgba(17,26,59,0.7960434173669468) 49%, rgba(16,21,40,0.9164915966386554) 74%);
+        padding:1em;
+        align-items: center;
+        gap: 1.8em;
+        border-radius: 0.5em;
+        margin: 1.5em;
+        
+    }
+
+    .sobre-textos {
+        flex: 1;
+    }
+
+    .sobre-p {
+        font-size: 17px;
+        
+    }
+
+
+    .sobre-subtitulo {
+        font-size: 20px;
+    }
+
+
+
+    .fachada-dtadeu {
+        flex: 1;
+        width: 40vw;
+        border-radius: 2em 0 2em 0;
+    }
+
+
+    /* nossa loja */
+
+    .nossa-loja {
+       display: none;   
+    }
+
+    .quemSomos-titulo {
+        font-size: 60px;
+        margin-top: 1em;
+    }
+
+    
+}
+
+    
+
+  
+
+
+@media screen and (min-width: 1470px) {
+
+
+    
+
+    .sobre-p {
+        font-size: 1.5em;
+    }
+
+    .sobre-subtitulo {
+        font-size: 1.8em;
+    }
+
+
+    .paragrafo-carrosseis {
+        font-size: 1.5em;
+        margin: 0 10em;
+    }
+
+}
+

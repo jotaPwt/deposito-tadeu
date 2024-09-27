@@ -1,0 +1,244 @@
+/* banner */
+
+.banner-dtadeu {
+    background-image: url("../img/banner-dtadeu2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+    padding: 2em 0 2em 1em;
+    
+    
+}
+
+.banner-titulo {
+    font-size: 7vw;
+    color: var(--branco);
+    
+}
+
+.banner-subtitulo {
+    font-size: 2.8vw;
+    color: var(--amarelo);
+    margin-left: 7px;
+    font-weight: 700;
+    margin-top: -8px;
+}
+
+.imagem-dtadeu-banner {
+    width: 50%;
+}
+
+
+/* abertura */
+
+
+.abertura {
+    padding: 1em;
+    text-align: center;
+    background: rgb(32,57,155);
+    background: linear-gradient(90deg, rgba(32,57,155,0.6223739495798319) 9%, rgba(17,26,59,0.7036064425770308) 50%, rgba(32,57,155,0.6195728291316527) 88%);
+}
+
+.abertura-p {
+    font-size: 5vw;
+    text-align: start;
+}
+
+.abertura-titulo {
+    margin: 0.5em 0 2em 0;
+    font-size: 7vw;
+    text-align: start;
+    
+}
+
+.botao-contato-abertura {
+    margin: 3em 0 3em 0;
+    
+    border: none;
+}
+
+.div-abertura {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+
+
+.icone-zap-botao {
+    width: 3.8vw;
+}
+
+
+
+
+
+
+/* quem somos */
+
+
+
+
+.conteiner-quemsomos {
+    margin: 1em 0;
+}
+
+.quemSomos-titulo {
+    font-size: 8vw;
+    color: var(--amarelo);
+    margin: 1em 0 1em 0;
+}
+
+
+/* carrosseis */
+
+.main-conteiner {
+    padding: 1em;
+}
+
+.div-texto-obra {
+    margin: 2em 0 2em 0;
+}
+
+.titulo-carrosseis {
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.paragrafo-carrosseis {
+    font-size: 22px;
+    margin: 0 1em;
+}
+
+.titulo-produtos {
+    margin: 1.5em 0;
+    text-align: center;
+ 
+}
+
+.botao-carrosseis {
+    text-decoration: none;
+    font-size: 0.6em; 
+    background-color: rgb(20, 202, 20);
+    padding: 1em;
+    border-radius: 0.8em;
+    margin-top: 1em;
+    width: 60%;
+}
+
+.icone-zap-botao-carrossel {
+    width: 1.5vh;
+}
+
+/* sobre */
+
+.sobre {
+        background: rgb(16,21,40);
+        background: linear-gradient(90deg, rgba(16,21,40,0.9332983193277311) 22%, rgba(17,26,59,0.7960434173669468) 49%, rgba(16,21,40,0.9164915966386554) 74%);
+        padding:1em;
+        border-radius: 0.5em;
+}
+
+
+.sobre-titulo {
+    margin: 0em 0 0.5em 0;
+    font-size: 30px;
+}
+
+.sobre-subtitulo {
+    color: rgb(171, 170, 170);
+   
+}
+
+.fachada-dtadeu {
+    width: 100%;
+}
+.sobre-textos {
+    text-align: start;
+    flex: 1; /* Ocupa o mesmo espaço que a imagem */
+}
+
+
+.sobre-p {
+    padding: 1em;
+}
+
+.div-botao-sobre {
+    margin-top: 2em;
+    text-align: center;
+    padding: 1em;
+}
+
+.botao-sobre {
+    padding: 0.5em 1.5em;
+    font-size: 1.3em;
+    font-weight: 600;
+    background-color: rgb(251, 255, 4);
+    color: black;
+    align-items: center;
+    border: solid 1px var(--azul-escuro);
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+
+
+/* botao whatsapp fixo */
+
+.btn-whatsapp a {
+
+    color:#fff; 
+    text-decoration:none; 
+    display:block; 
+   }
+   
+   .btn-whatsapp {
+       
+       position:fixed; 
+       right: -5px; 
+       bottom:30px; 
+       transform: translate(-50%, -50%);  
+       background-color:rgb(37, 211, 102); 
+       width:60px; height:60px; 
+       text-align:center; 
+       line-height:58px; 
+       font-size:1.8em; 
+       color:#ffffff; 
+       font-weight:100; 
+       border-radius:50%; 
+   }
+   
+   .btn-whatsapp:before,
+   .btn-whatsapp:after
+   
+   {
+   
+    content: '';
+       display:block;
+       position: absolute;
+       border-radius:50%;
+       border:1px solid #25d366;
+       left: -20px;
+       right: -20px;
+       bottom: -20px;
+       top: -20px;
+       animation: animate 1.5s linear infinite;
+       opacity:0;
+       backface-visibility:hidden;    
+   }
+   
+   .pulsaDelay:after { animation-delay: .5s; }
+   
+   @keyframes animate {
+   
+   
+      0%   { transform: scale(0.5); opacity:0; }
+      50%  { opacity:1; }
+      100% { transform: scale(1.2); opacity:0; }
+   
+   }
+
+
+   
